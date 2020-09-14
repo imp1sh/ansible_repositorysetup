@@ -1,3 +1,4 @@
+# Created and managed by Ansible
 {% for repoitem in repolist_alpine %}
 {{ repoitem['url'] }}/{{ repoitem['version'] }}/main
 {% if repoitem['communityenable'] is defined and repoitem['communityenable'] %}
