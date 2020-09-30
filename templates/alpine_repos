@@ -8,3 +8,8 @@
 {{ repoitem['url'] }}/{{ repoitem['version'] }}/testing
 {% endif %}
 {% endfor %}
+{% if repolist_alpinetagged is defined %}
+{% for taggedrepo in repolist_alpinetagged %}
+@{{ taggedrepo['name'] }} {{ taggedrepo['url'] }}
+{% endfor %}
+{% endif %}
